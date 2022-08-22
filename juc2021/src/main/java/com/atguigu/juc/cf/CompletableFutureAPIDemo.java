@@ -15,6 +15,7 @@ public class CompletableFutureAPIDemo
 
         System.out.println(CompletableFuture.supplyAsync(() -> {
             return 1;
+        //}).thenApplyAsync(f -> {
         }).thenApply(f -> {
             return f + 2;
         }).whenComplete((v, e) -> {
