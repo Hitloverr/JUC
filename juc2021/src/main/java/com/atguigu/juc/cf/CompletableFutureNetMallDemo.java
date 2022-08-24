@@ -108,6 +108,7 @@ class NetMall
     {
         //检索需要1秒钟
         try { TimeUnit.SECONDS.sleep(1); } catch (InterruptedException e) { e.printStackTrace(); }
+        // 随机数
         return ThreadLocalRandom.current().nextDouble() * 2 + productName.charAt(0);
     }
 }
